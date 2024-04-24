@@ -25,10 +25,9 @@ async function getWeather(city){
          throw new Error("Network response has issue:",response.status);
       }
       getData= await response.json();
-
+      getWeatherIcon(getData)
       showWeather(getData);
-      console.log(getData);
-      
+      console.log(getData);  
    } catch (error) {
       console.error("there is a problem with your fetch operation:",error);
       
@@ -45,13 +44,10 @@ async function getWeatherIcon(getData){
       // const titleIcon=dataImg.filter(gif=>gif.data.title.includes(`${iconText}`));
       body.style.backgroundImage=`url(${dataImg.data.images.original.url})`;
       console.log(response, dataImg,body.style.backgroundImage);
-      
 
    } catch (error) {
-      console.error("there is a problem with your fetch operation:",error);
-      
-   }
-   
+      console.error("there is a problem with your fetch operation:",error);  
+   }  
 }
 
 btnSubmit.addEventListener("click", async()=>{
@@ -59,16 +55,14 @@ btnSubmit.addEventListener("click", async()=>{
    result.style.display="none";
    loader.textContent="Loading...";
    await getWeather(city);
-   await getWeatherIcon(getData)
+   // await getWeatherIcon(getData)
    loader.style.display="none";
    result.style.display="block";
 
-   console.log(loader.textContent);
-   
+   console.log(loader.textContent); 
 });
 form.addEventListener("submit", (e)=>{
    e.preventDefault();
-  
 })
 
 function showWeather(getData){
