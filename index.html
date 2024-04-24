@@ -7,29 +7,56 @@
    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-   <form action="" id="form">
-      <label for="search-city">
-         <p>City</p>
-         <input type="search" id="search-city">
-      </label>
-      <button id="submit">Submit</button>
-      <button id="toggle">Toggle °C/°F</button>
-   </form>
-   <div class="result">
-      <div class="city">City:</div>
-      <span></span>
-      <div class="country">Country:</div>
-      <span></span>
-      <div class="condition">Condition:</div>
-      <span></span>
-      <div class="temp">Temp:</div>
-      <span></span>
-      <div class="hum">Hum</div>
-      <span></span>
-      <div class="wind">Wind:</div>
-      <span></span>
-
+   <div class="main-content">
+      <h3>WEATHER</h3>
+      
+      <form action="" id="form">
+         <label for="location">
+            <input type="search" id="location" placeholder="Enter a location">
+         </label>
+         <div class="btn">
+            <button id="submit">Submit</button>
+            <button id="toggle">Toggle °C/°F</button>
+         </div>
+         
+      </form>
+   
+      <div class="weather-content">
+         <div class="loader"></div>
+         <div class="result">
+            <div class="city">City:
+               <span></span>
+            </div>          
+            <div class="country">Country:
+               <span></span>
+            </div>           
+            <div class="condition">Condition:
+               <span></span>
+            </div>           
+            <div class="iconDiv">
+               <img src="" alt="weather icon" id="icon">
+            </div>           
+            <div class="temp">Temp:
+               <span></span>
+            </div>          
+            <div class="hum">Hum:
+               <span></span>
+            </div>    
+            <div class="wind">Wind:
+               <span></span>
+            </div>           
+         </div>
+      </div>
    </div>
+
+ 
+   <footer>
+      &copy; 2024 by TchipenCode
+      <a href="https://github.com/Tchipencode"
+        ><img src="github.svg" alt="github" /></a
+      >. All rights reserved.
+   </footer>
+
    <script src="script.js"></script>
 </body>
 </html>

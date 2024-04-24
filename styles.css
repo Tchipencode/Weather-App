@@ -1,0 +1,99 @@
+*{
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   padding: 0;
+   margin: 0;  
+}
+body{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background-color: aqua;
+   background-size: cover;
+   flex: 1;
+   /* background-position-x: 100vh; */
+   height: 100vh;
+   
+}
+.main-content{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   flex: 1;
+   height: 100vh;
+} 
+.result{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: start;
+   gap: 8px;
+}
+h3{
+   font-size: 3rem;
+   text-align: center;
+   color: white;
+   margin: 50px 0 50px 0;
+}
+#form{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+   
+}
+.weather-content{
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: center;
+   gap: 20px;
+   padding-top: 30px;
+   flex:1;  
+}
+.weather-content div, span{
+   font-size: 1.2rem;
+   font-weight: bold;
+   color: white;
+}
+.btn{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   gap: 15px;
+}
+button{
+   width: 120px;
+   height: 30px;
+   background-color: #1dbcec;
+   border: none;
+   border-radius: 5px;
+   font-size: 1rem;
+   box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.4);
+   
+}
+#location{
+   border: none;
+   border-radius: 5px;
+   box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.4);
+   height: 30px;
+   width: 200px;
+}
+footer{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   margin-top:20px;
+   background-color: azure;
+   height: 50px;
+   width: 100%;
+}
+footer img{
+   width:24px;
+   height: 24px;
+
+}
