@@ -14,13 +14,13 @@ const btnToggle=document.querySelector("#toggle");
 const weatherContent=document.querySelector(".weather-content");
 const loader=document.querySelector(".loader");
 const result=document.querySelector(".result");
-let getData=null;
+let getData="";
 let currentTemp="";
 let tempUnit="";
 
 async function getWeather(city){
    try {
-      const response= await fetch(`http://api.weatherapi.com/v1/current.json?key=20a1fc707b85408583a133738242204&q=${city}`, {mode :'cors'});
+      const response= await fetch(`https://api.weatherapi.com/v1/current.json?key=20a1fc707b85408583a133738242204&q=${city}`, {mode :'cors'});
       if(!response.ok){
          throw new Error("Network response has issue:",response.status);
       }
